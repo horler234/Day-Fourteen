@@ -1,0 +1,285 @@
+$strong-cyan: hsl(171, 66%, 44%)
+$light-blue: hsl(233, 100%, 69%)
+$dark-grayish-blue: hsl(210, 10%, 33%)
+$grayish-blue: hsl(201, 11%, 66%)
+
+*
+  margin: 0
+  padding: 0
+
+html
+  box-sizing: border-box
+  scroll-behavior: smooth
+  body
+    font-family: 'Bai Jamjuree', sans-serif
+
+header
+  background: linear-gradient( rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5) ), url('bg-header-desktop.png')
+  background-repeat: no-repeat
+  background-size: 100% 250px
+  padding: 90px 0 150px
+
+.small-container
+  text-align: center
+  max-width: 550px
+  width: 100%
+  margin: auto
+
+img.logo-img
+  width: 80px
+
+h1.history
+  color: $dark-grayish-blue
+  margin: 40px 0 15px
+
+p.instantly
+  color: $grayish-blue
+
+button.ios-btn,
+button.mac-btn
+  padding: 10px 25px
+  color: #fff
+  border-radius: 20px
+  border: transparent
+  font-family: 'Bai Jamjuree', sans-serif
+  font-style: 14px
+  cursor: pointer
+  -webkit-box-shadow: 0px 1px 12px -5px rgba(0,0,0,0.75)
+  -moz-box-shadow: 0px 1px 12px -5px rgba(0,0,0,0.75)
+  box-shadow: 0px 1px 12px -5px rgba(0,0,0,0.75)
+  margin-top: 40px
+  margin-right: 10px
+  transition: 500ms ease-in-out
+
+button.ios-btn
+  background: $strong-cyan
+
+  &:hover
+    background: transparentize($strong-cyan, .3)
+button.mac-btn
+  background: $light-blue
+  &:hover
+    background: transparentize($light-blue, .3)
+
+.keep-track
+  padding-bottom: 150px
+
+h1.keep-header
+  color: $dark-grayish-blue
+  margin-bottom: 15px
+
+p.keep-text
+  color: $grayish-blue
+  font-size: 14px
+
+.flex
+  display: flex
+  justify-content: space-between
+  margin-top: 80px
+  flex-wrap: wrap
+
+.laptop-img-container
+  width: 50%
+  overflow: hidden
+
+img.laptop-img
+  object-position: 50% 30%
+  margin: 0 -80px
+
+.words-container
+  width: 44%
+  padding-top: 70px
+
+h1.quick
+  color: $dark-grayish-blue
+  font-size: 18px
+  margin: 50px 0 10px
+
+p.quick-word
+  color: $grayish-blue
+  font-size: 13px
+  width: 280px
+  line-height: 2
+
+.access-section,
+.clipboard-section
+  padding-bottom: 80px
+
+.device-img-container
+  max-width: 700px
+  width: 100%
+  margin: 80px auto 0
+
+
+img.device-img
+  width: 100%
+
+.big-container
+  max-width: 1000px
+  margin: auto
+
+.flex-content
+  text-align: center
+
+h1.quick.create-header1
+  margin-top: 40px
+
+h1.quick.create-header2
+  margin-top: 45px
+
+.img-flex-content
+  width: 13%
+
+img.img-flex
+  width: 100%
+
+.flex.flex-addition
+  margin: 150px 0
+
+footer
+  background: transparentize($grayish-blue, .9)
+  font-size: 14px
+  padding: 30px 0
+
+.footer-flex
+  display: flex
+  flex-wrap: wrap
+  justify-content: space-between
+
+img.footer-img
+  width: 150px
+  color: #ffffff
+  margin-bottom: 25px
+.col-1
+  width: 15%
+
+img.footer-img
+  width: 45px
+
+.footer-text
+  margin-bottom: 15px
+  color: $dark-grayish-blue
+  display: block
+  text-decoration: none
+  &:hover
+    color: $strong-cyan
+
+.col-2
+  width: 15%
+.col-3
+  width: 20%
+
+
+.icon-flex-container
+  display: flex
+  justify-content: space-between
+
+.icon-o
+  width: 90%
+
+.icon-footer
+  width: 80%
+
+.col-3-flex
+  display: flex
+
+p.copyright
+  font-size: 10px
+  text-align: right
+  color: $grayish-blue
+
+i.fa.link-icon
+  padding-right: 20px
+
+@media (max-width: 768px)
+    header
+      background: linear-gradient( rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5) ), url('bg-header-mobile.png')
+      background-repeat: no-repeat
+      background-size: 100% 300px
+      padding: 90px 0 150px
+
+    .small-container
+      width: 85%
+
+    p.instantly
+      line-height: 1.5
+
+    button.ios-btn,
+    button.mac-btn
+      width: 100%
+      padding: 20px
+      font-size: 16px
+
+    button.mac-btn
+      margin-top: 20px
+
+    h1.keep-header
+      font-size: 2rem
+
+    p.keep-text
+      font-size: 16px
+      line-height: 1.5
+
+    .flex
+      justify-content: space-around
+
+    .laptop-img-container
+      width: 85%
+
+    img.laptop-img
+      width: 100%
+      margin: 0
+
+    .words-container
+      width: 85%
+      text-align: center
+
+    h1.quick
+      font-size: 1.5rem
+
+    p.quick-word
+      width: 100%
+      font-size: 16px
+      line-height: 1.5
+
+    .flex.flex-addition
+      margin-top: 40px
+      margin-bottom: 70px
+
+    .flex-content,
+      width: 85%
+      margin-bottom: 70px
+
+    .img-flex-content
+      width: 60%
+      text-align: center
+      margin-bottom: 70px
+
+    img.img-flex
+      width: 60%
+      margin: auto
+
+    .col-1,
+    .col-2,
+    .col-3
+      width: 100%
+
+    .footer-flex
+      text-align: center
+
+    .col-1
+      margin-bottom: 40px
+
+    .col-3-flex
+      width: 30%
+      margin: auto
+
+    .col-3
+      margin-top: 50px
+
+    .footer-text
+      font-size: 16px
+
+    p.copyright
+      text-align: center
+      margin-top: 40px
